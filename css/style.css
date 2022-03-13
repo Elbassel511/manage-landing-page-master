@@ -170,7 +170,7 @@ html {
     inset: 0 0 0 0 ;
     background-color: rgba(0, 0, 0, 0.40);
     display: none;
-    z-index: -1;
+    z-index: 0;
 }
 
 .nav--btn {
@@ -209,6 +209,7 @@ nav{
 .hamburger {
     width: 2.5rem;
     aspect-ratio: 1;
+    z-index: 100;
 }
 
 /* header section */
@@ -645,3 +646,4 @@ footer .update span:hover{
 
     
 }
+/*  */
