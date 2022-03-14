@@ -381,7 +381,7 @@ a.current {
     align-items: center;
     position: relative;
 }
-.section-simplify h1{
+.section-simplify h2{
     font-size: var(--fs-1);
     font-weight: 500;
     font-family: var(--ff);
@@ -613,7 +613,7 @@ footer .update span:hover{
         padding-inline: 7rem;
         justify-content: space-between;   
     }
-    .section-simplify h1{
+    .section-simplify h2{
         max-width: 65rem;
         text-align: left;
         
