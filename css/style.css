@@ -303,7 +303,7 @@ header p {
 }
 
 .testimonial--card{
-    background-color: var(--Very-Pale-Red);
+    background-color: var(--Vary-Light-Gray);
     position: relative;
     flex-shrink: 0;
     width: 100%;
@@ -716,4 +716,3 @@ header::after{
 
     
 }
-
