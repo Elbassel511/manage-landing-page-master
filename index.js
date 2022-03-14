@@ -50,11 +50,10 @@ carsoulController.addEventListener('click',(e)=>{
 function carsoulScroll (targetIdx){
     const currentCard = carsoulController.querySelector('.current');
     const currentCardIndex = carsoulDots.findIndex(card => card == currentCard );
-    console.log(cards.length)
     if (targetIdx===undefined) {
         targetIdx = (currentCardIndex == (cards.length-1)) ? 0 : currentCardIndex + 1 
     }
-    console.log(targetIdx)
+
 
     carsoulDots[targetIdx].classList.add('current');
     carsoulDots[currentCardIndex].classList.remove('current');
