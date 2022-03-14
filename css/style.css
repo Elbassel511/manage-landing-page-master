@@ -79,7 +79,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.7;
   overflow-x: hidden;
 }
 
@@ -192,8 +192,6 @@ html {
     font-weight: 700;
     color: var(--Dark-Blue);
     padding-block:2.5rem ;
-    
-    
 }
 
 nav{
@@ -245,6 +243,7 @@ header p {
 .section-hero{
     margin-top: 10rem;
     text-align: center;
+    position: relative;
 
 }
 
@@ -380,6 +379,7 @@ a.current {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .section-simplify h1{
     font-size: var(--fs-1);
@@ -554,7 +554,8 @@ footer .update span:hover{
     .section-hero {
         display: flex;
         padding-inline: 7rem ;
-        gap:5rem
+        gap:5rem;
+        position:relative;
     }
     .hero--header{
         flex-basis: 100%;
@@ -567,6 +568,9 @@ footer .update span:hover{
     .hero--header p {
         text-align: left;
         padding-left: 0;
+    }
+    .hero--header p{
+        max-width: 35rem;
     }
     .hero--body {
         margin-top: 0;
@@ -589,6 +593,12 @@ footer .update span:hover{
     }
 
     /* testimonials section */
+    .section-testimonials {
+        margin-top: 15rem;
+    }
+    .testimonial--carousel{
+        width: 100%;
+    }
     .carosuel--controller{
         display: none;
     }
@@ -604,7 +614,7 @@ footer .update span:hover{
         justify-content: space-between;   
     }
     .section-simplify h1{
-        max-width: 60rem;
+        max-width: 65rem;
         text-align: left;
         
     }
@@ -646,4 +656,64 @@ footer .update span:hover{
 
     
 }
-/*  */
+/*back ground iamges  */
+header::after{
+    content: "";
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 60rem;
+    position: absolute;
+    top:-20rem;
+    right:-20rem;
+    background-size: contain;
+    z-index: -1;
+}
+
+.section-hero::after{
+    content: "";
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    height: 45rem;
+    width: 45rem;
+    position: absolute;
+    top:-40rem;
+    right:-30rem;
+    background-size: contain;
+    z-index: -1;
+}
+
+.section-simplify::after{
+    content: "";
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+
+
+@media (min-width:54rem) {
+    header::after{
+        height: 81.5rem;
+        width: 81.5rem;
+        top:-20rem;
+        right:-25rem;
+    }
+
+    .section-hero::after{
+        height: 81.5rem;
+        width: 81.5rem;
+        top:25rem;
+        left:-50rem;
+    }
+
+    .section-simplify::after{
+        background-image: url(../images/bg-simplify-section-desktop.svg);  
+    }
+    
+
+    
+}
+
